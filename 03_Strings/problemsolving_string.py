@@ -646,9 +646,107 @@ Click me to see the sample solution
 
 str1 = "python exercises practice solution"
 
-def remove_duplicate(str1):
-    for i in str1:
+# def remove_duplicate(str1):
+#     for i in str1:
         
-    return
+#     return
     
 # remove_duplicate(str1)
+
+'''
+62. Sum digits in string.
+
+Write a Python program to compute the sum of the digits in a given string.
+Click me to see the sample solution
+'''
+
+# str1  = 'abcd1234'
+
+# def sum_digit_string(str1):
+#     sum = 0
+#     for i in str1:
+#         print(type(i))
+#     return sum
+
+# print(sum_digit_string(str1))
+
+
+'''
+63. Remove leading zeros in IP address.
+
+Write a Python program to remove leading zeros from an IP address.
+Click me to see the sample solution
+'''
+pass
+
+'''
+64. Find max length of consecutive zeros (binary).
+
+Write a Python program to find the maximum length of consecutive 0's in a given binary string.
+Click me to see the sample solution
+'''
+pass
+
+'''
+65. Common characters between two strings.
+
+Write a Python program to find all the common characters in lexicographical order from two given lower case strings. If there are no similar letters print "No common characters".
+Click me to see the sample solution
+'''
+
+pass
+
+'''
+66. Make strings anagrams (retain characters).
+
+Write a Python program to make two given strings (lower case, may or may not be of the same length) anagrams without removing any characters from any of the strings.
+Click me to see the sample solution
+'''
+
+pass
+
+'''
+67. Remove consecutive duplicates in string.
+
+Write a Python program to remove all consecutive duplicates of a given string.
+Click me to see the sample solution
+'''
+
+pass
+
+'''
+68. Separate single and multiple occurrence chars.
+
+Write a Python program to generate two strings from a given string. For the first string, use the characters that occur only once, and for the second, use the characters that occur multiple times in the said string.
+Click me to see the sample solution
+
+'''
+pass
+
+
+
+'''
+79. Find smallest and largest words.
+
+Write a Python program to find the smallest and largest words in a given string.
+Click me to see the sample solution
+'''
+
+str1 = 'Write a Java program to sort an array of given integers using Quick sort Algorithm.'
+def smallest_largest(str1):
+    smallest = 0
+    largest = 0
+    t = str1.split()
+    print(t)
+    
+    # for i in t:
+    #     print(len(i),i)
+
+
+
+
+
+
+
+
+print(smallest_largest(str1))

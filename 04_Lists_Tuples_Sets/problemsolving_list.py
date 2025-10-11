@@ -501,3 +501,38 @@ def Concatenate_List(color):
 print(Concatenate_List(color))
 
 
+'''
+55. Remove Key-Value Pairs from Dictionaries in List
+
+
+Write a Python program to remove key-value pairs from a list of dictionaries.
+Click me to see the sample solution
+'''
+
+original_list = [{'key1': 'value1', 'key2': 'value2'}, {'key1': 'value3', 'key2': 'value4'}]
+
+def remove_keyvalue(original_list):
+    pass
+
+'''
+56. Convert String to List
+
+Write a Python program to convert a string to a list.
+Click me to see the sample solution
+'''
+
+color = "['Red', 'Green', 'White']"
+
+def Str_to_Lis(color):
+    pass
+
+'''57. Check All Strings Match Given String
+
+Write a Python program to check if all items in a given list of strings are equal to a given string.
+Click me to see the sample solution
+'''
+
+color1 = ["green", "orange", "black", "white"]
+
+color2 = ["green", "green", "green", "green"]
+
