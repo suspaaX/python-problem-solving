@@ -1,0 +1,1 @@
+print("rama"  "sama") \n
