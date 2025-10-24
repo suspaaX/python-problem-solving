@@ -185,29 +185,6 @@ def cube(num):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 '''Exercise 18: Print the following pattern'''
 
 
@@ -234,32 +211,10 @@ def cube(num):
 
 row = 5
 
-for i in range(1,row+1):
-    for j in range(1,row-(row-i)+1):
-        print(j,end='  ')
-    print()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# for i in range(1,row+1):
+#     for j in range(1,row-(row-i)+1):
+#         print(j,end='  ')
+#     print()
 
 
 
@@ -305,3 +260,144 @@ def largest_number(num1):
 
 
 '''==========================='THE END'================================================='''
+
+
+'''
+1. Divisible by 7 and Multiples of 5
+
+Write a Python program to find those numbers which are divisible by 7 and multiples of 5, between 1500 and 2700 (both included).
+
+Click me to see the sample solution
+'''
+
+pass
+
+'''
+2. Temperature Converter
+
+Write a Python program to convert temperatures to and from Celsius and Fahrenheit.
+
+[ Formula : c/5 = f-32/9 [ where c = temperature in celsius and f = temperature in fahrenheit ]
+
+Expected Output :
+
+60°C is 140 in Fahrenheit
+45°F is 7 in Celsius
+
+Click me to see the sample solution
+'''
+
+
+
+def tem_conv():
+
+    pass
+
+
+'''
+
+3. Number Guessing Game
+
+Write a Python program to guess a number between 1 and 9.
+
+Note : User is prompted to enter a guess. If the user guesses wrong then the prompt appears again until the guess is correct, on successful guess, user will get a "Well guessed!" message, and the program will exit.
+
+Click me to see the sample solution
+'''
+pass
+
+'''4. Construct Pattern (Diamond Pattern)
+
+Write a Python program to construct the following pattern, using a nested for loop.
+
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * 
+* * * 
+* * 
+*
+
+'''
+
+row = 9
+
+
+# for i in range(1,row+1):
+#     for j in range(1,i):
+#         print('*',end='')
+#         pass
+
+
+'''
+5. Reverse a Word
+
+Write a Python program that accepts a word from the user and reverses it.
+
+Click me to see the sample solution
+'''
+# str1 ='father'
+
+# def reverse_word(str1):
+#     new_str = 
+#     return new_str
+
+# print(reverse_word(str1))
+
+'''
+6. Count Even and Odd Numbers
+
+Write a Python program to count the number of even and odd numbers in a series of numbers
+
+Sample numbers : numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9) 
+
+Expected Output :
+
+Number of even numbers : 5
+Number of odd numbers : 4
+
+Click me to see the sample solution
+'''
+
+
+num1 = (1, 2, 3, 4, 5, 6, 7, 8, 9) 
+
+
+def check_odd_even(num1):
+    num_odd =[]
+    num_even = []
+    for i in num1:
+        if i%2 ==0:
+            num_even.append(i)
+            
+        else:
+            num_odd.append(i)
+        
+    print(f'no of even:',len(num_odd))
+    print(f'no of even:',len(num_even))
+
+
+
+# print(check_odd_even(num1))
+
+pass
+            
+
+'''
+7. Print Items with Types
+
+Write a Python program that prints each item and its corresponding type from the following list.
+
+Sample List : datalist = [1452, 11.23, 1+2j, True, 'w3resource', (0, -1), [5, 12], {"class":'V', "section":'A'}]
+'''
+
+lis1 = [1452, 11.23, 1+2j, True, 'w3resource', (0, -1), [5, 12], {"class":'V', "section":'A'}]
+
+def data_types (lis1):
+    for i in lis1:
+        print(i,type(i))
+    
+data_types(lis1)
+
