@@ -709,4 +709,173 @@ def even_interval(num1,num2):
             print(i)
 
 
-even_interval(num1,num2)
+# even_interval(num1,num2)
+
+
+
+'''
+
+17. Alphabet Pattern 'A'
+
+Write a Python program to print the alphabet pattern 'A'.
+
+Expected Output:
+
+  ***                                                                   
+ *   *                                                                  
+ *   *                                                                  
+ *****                                                                  
+ *   *                                                                  
+ *   *                                                                  
+ *   *
+
+
+'''
+
+pass
+'''18-31 skip'''
+
+
+'''
+32. Vowel or Consonant Checker
+
+Write a Python program to check whether an alphabet is a vowel or consonant.
+
+Expected Output:
+
+Input a letter of the alphabet: k                                       
+k is a consonant.
+Click me to see the sample solution
+'''
+
+lttr = 'i'
+
+def cons_vowl_checker(lttr):
+    if  lttr=='a':
+        print('This is vowel')
+    elif  lttr=='e':
+        print('This is vowel')
+
+    elif  lttr=='i':
+        print('This is vowel')
+
+    elif  lttr=='o':
+        print('This is vowel')
+
+    elif  lttr=='u':
+        print('This is vowel')
+
+    else:
+        print('This is constant')
+    
+    return
+
+# cons_vowl_checker('c')
+
+'''
+
+33. Month Name to Number of Days
+
+Write a Python program to convert a month name to a number of days.
+
+Expected Output:
+
+List of months: January, February, March, April, May, June, July, August
+, September, October, November, December                                
+Input the name of Month: February                                       
+No. of days: 28/29 days 
+Click me to see the sample solution
+
+'''
+
+month = 'January'
+
+def no_of_days(month):
+
+    if month == ['March','January','May','July',' August','October','December ']:
+        print('No. of days: 31 days ')
+
+    elif month == ['April','June','September',' November']:
+        print('No. of days: 31 days ')
+
+    elif month == ['February']:
+        print('No. of days: 28/29 days ')
+
+    else:
+        print('error in code...')
+    return
+
+
+# no_of_days(month)
+
+
+'''
+43. Multiplication Table
+
+Write a Python program to create the multiplication table (from 1 to 10) of a number.
+
+Expected Output:
+
+Input a number: 6                                                       
+6 x 1 = 6                                                               
+6 x 2 = 12                                                              
+6 x 3 = 18                                                              
+6 x 4 = 24                                                              
+6 x 5 = 30                                                              
+6 x 6 = 36                                                              
+6 x 7 = 42                                                              
+6 x 8 = 48                                                              
+6 x 9 = 54                                                              
+6 x 10 = 60 
+Click me to see the sample solution
+'''
+pass
+
+'''
+
+
+44. Nested Loop Number Pattern
+
+Write a Python program to construct the following pattern, using a nested loop number.
+
+Expected Output:
+
+1
+22
+333
+4444
+55555
+666666
+7777777
+88888888
+999999999
+Click me to see the sample solution
+'''
+row = 9 
+
+for i in range(1,row+1):
+    for j in range(1,i+1):
+        print(j,end='')
+    print()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
