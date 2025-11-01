@@ -742,6 +742,126 @@ def smallest_largest(str1):
     # for i in t:
     #     print(len(i),i)
 
+# print(smallest_largest(str1))
+
+'''
+80. Substrings with same first and last char.
+
+Write a Python program to count the number of substrings with the same first and last characters in a given string.
+Click me to see the sample solution
+'''
+# def count():
+
+
+# pass
+
+
+'''
+81. Index of substring or "Not found".
+
+Write a Python program to determine the index of a given string at which a certain substring starts.
+If the substring is not found in the given string return 'Not found'.
+Click me to see the sample solution
+'''
+
+
+'''
+82. Wrap string into paragraph with width.
+
+Write a Python program to wrap a given string into a paragraph with a given width.
+Sample Output:
+Input a string: The quick brown fox.
+Input the width of the paragraph: 10
+Result:
+The quick
+brown fox.
+Click me to see the sample solution
+'''
+pass
+
+'''
+83. Print number in decimal, octal, hex, binary.
+
+Write a Python program to print four integer values - decimal, octal, hexadecimal (capitalized), binary - in a single line.
+Sample Output:
+Input an integer: 25
+Decimal Octal Hexadecimal (capitalized), Binary
+25 31 19 11001
+Click me to see the sample solution
+'''
+
+
+pass
+
+'''
+84. Swap cases in string.
+
+Write a Python program to swap cases in a given string.
+Sample Output:
+pYTHON eXERCISES
+jAVA
+nUMpY
+Click me to see the sample solution
+'''
+
+# sapmle = "Python Exercises"
+# output = 'pYTHON eXERCISES'
+
+# def swap_string(sample):
+#     nw_str = sample.lower()
+#     nw.
+#     print(nw_str)
+#     return nw_str
+
+
+# swap_string(sapmle)
+
+
+'''
+85. Bytearray to hexadecimal string.
+
+Write a Python program to convert a given Bytearray to a Hexadecimal string.
+Sample Output:
+Original Bytearray :
+[111, 12, 45, 67, 109]
+Hexadecimal string:
+6f0c2d436d
+Click me to see the sample solution
+
+'''
+
+pass
+
+
+'''
+
+86. Delete all occurrences of character.
+
+Write a Python program to delete all occurrences of a specified character in a given string.
+Sample Output:
+Original string:
+Delete all occurrences of a specified character in a given string
+Modified string:
+Delete ll occurrences of specified chrcter in given string
+Click me to see the sample solution
+
+'''
+
+str1 = "Delete all occurrences of a specified character in a given string"
+
+output = 'Delete ll occurrences of specified chrcter in given string'
+
+
+def test_pattern(str1):
+    new_str = str()
+    new_str = str1.split()
+    print(new_str)
+    return new_str
+
+
+
+test_pattern(str1)
+        
 
 
 
@@ -749,4 +869,5 @@ def smallest_largest(str1):
 
 
 
-print(smallest_largest(str1))
+
+

@@ -783,10 +783,11 @@ Expected Output:
 List of months: January, February, March, April, May, June, July, August
 , September, October, November, December                                
 Input the name of Month: February                                       
-No. of days: 28/29 days 
+No . of days: 28/29 days 
 Click me to see the sample solution
 
 '''
+
 
 month = 'January'
 
@@ -809,6 +810,175 @@ def no_of_days(month):
 # no_of_days(month)
 
 
+
+'''
+35. String Represents Integer Checker
+
+Write a Python program that checks whether a string represents an integer or not.
+
+Expected Output:
+
+Input a string: Python                                                  
+The string is not an integer.  
+Click me to see the sample solution
+
+
+'''
+str = 'The string is not an integer'
+
+
+def int_str(str):
+    chck_int = int()
+    for i in str:
+        if i == chck_int:
+            print('The string is not an integer')
+        else:
+            print('The string is string')
+            break
+    return
+    
+int_str(12)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''
+40. Median of Three Values
+
+Write a Python program to find the median of three values.
+
+Expected Output:
+
+Input first number: 15                                                  
+Input second number: 26                                                 
+Input third number: 29                                                  
+The median is 26.0   
+Click me to see the sample solution
+
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''
+41. Next Day Calculator
+
+Write a Python program to get the next day of a given date.
+
+Expected Output:
+
+Input a year: 2016                                                      
+Input a month [1-12]: 08                                                
+Input a day [1-31]: 23                                                  
+The next date is [yyyy-mm-dd] 2016-8-24   
+Click me to see the sample solution
+'''
+
+# year = input('Input a year:')
+# month =input('Input a month:')
+# day = input('Input a day:')
+
+# next_date = 
+
+
+
+
+
+'''
+42. Sum and Average of n Integers
+
+Write a Python program to calculate the sum and average of n integer numbers (input from the user). Input 0 to finish.
+
+Click me to see the sample solution
+
+'''
+
+
+
+# def sum_n_avg(*args):
+#     sum = 0
+#     avg = 0
+#     for i in args:
+#         sum = sum+i
+#         avg = sum/len(args)
+#     print(sum)
+#     print(avg)
+
+
+#     return
+
+
+# sum_n_avg(26,26,26)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 '''
 43. Multiplication Table
 
@@ -829,7 +999,14 @@ Input a number: 6
 6 x 10 = 60 
 Click me to see the sample solution
 '''
-pass
+
+
+
+# num = 7
+
+# for i in range(1,11):
+#     print(num,'x' ,i ,'=', num*i)
+
 
 '''
 
@@ -851,12 +1028,12 @@ Expected Output:
 999999999
 Click me to see the sample solution
 '''
-row = 9 
+# row = 9 
 
-for i in range(1,row+1):
-    for j in range(1,i+1):
-        print(j,end='')
-    print()
+# for i in range(1,row+1):
+#     for j in range(1,i+1):
+#         print(j,end='')
+#     print()
 
 
 
