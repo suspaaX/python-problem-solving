@@ -847,27 +847,89 @@ Click me to see the sample solution
 
 '''
 
-str1 = "Delete all occurrences of a specified character in a given string"
+# str1 = "Delete all occurrences of a specified character in a given string"
 
-output = 'Delete ll occurrences of specified chrcter in given string'
-
-
-def test_pattern(str1):
-    new_str = str()
-    new_str = str1.split()
-    print(new_str)
-    return new_str
+# output = 'Delete ll occurrences of specified chrcter in given string'
 
 
+# def test_pattern(str1):
+#     if str1 == try
+#     print(new_str)
+#     return new_str
 
-test_pattern(str1)
+# test_pattern(str1)
         
+'''
+87. Find common values in two strings.
 
+Write a Python program to find the common values that appear in two given strings.
+Sample Output:
+Original strings:
+Python3
+Python2.7
+Intersection of two said String:
+Python
+Click me to see the sample solution
+'''
 
+pass
 
+'''
+88. Check string for capital, lower, number, length.
 
+Write a Python program to check whether a given string contains a capital letter, 
+a lower case letter, a number and a minimum length.
+Sample Output:
+Input the string: W3resource
+['Valid string.']
+Click me to see the sample solution
+'''
 
+# str1 = 'Input the string: W3resource'
 
+# def check_valid(str1):
+
+# pass
+
+'''
+89. Remove unwanted characters in string.
+
+Write a Python program to remove unwanted characters from a given string.
+Sample Output:
+Original String : Pyth*^on Exercis^es
+After removing unwanted characters:
+Python Exercises
+Original String : A%^!B#*CD
+After removing unwanted characters:
+ABCD
+Click me to see the sample solution
+'''
+
+pass
+
+'''
+90. Remove duplicate words in string.
+
+Write a Python program to remove duplicate words from a given string.
+Sample Output:
+Original String:
+Python Exercises Practice Solution Exercises
+After removing duplicate words from the said string:
+Python Exercises Practice Solution
+Click me to see the sample solution
+
+'''
+str1 = 'Python Exercises Practice Solution Exercises'
+output ='Python Exercises Practice Solution'
+
+def remove_duplicate(str1):
+    emp_str = str()
+    new_str = str1.split()
+    set1 = set(new_str)
+    emp_str(set1)
+    return emp_str
+
+remove_duplicate(str1)
 
 
 

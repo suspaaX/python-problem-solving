@@ -837,7 +837,7 @@ def int_str(str):
             break
     return
     
-int_str(12)
+int_str()
 
 
 
