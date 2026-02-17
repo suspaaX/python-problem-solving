@@ -32,9 +32,9 @@ solved purely for skill mastery, not for hype 🚀
 
 ## ⚙️ Tools & Setup
 - Python 3.11+
-- VS Code / PyCharm
+- VS Code
 - Git & GitHub for version control
-- Optional: Jupyter Notebook for visual testing
+
 
 ---
 
@@ -57,5 +57,5 @@ After finishing this repo:
 ---
 
 ## 🌐 Connect
-🔗 GitHub: [@your-username](https://github.com/your-username)  
-💬 Contact: (optional)  
+🔗 GitHub: [@Abhishek Kumar](https://github.com/suspaaX)  
+💬 Contact: (email-abhishekkumar269@gmail.com)  
