@@ -1,1 +1,0 @@
-print("rama"  "sama") \n
