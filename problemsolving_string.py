@@ -63,18 +63,20 @@ Expected Result : 'resta$t'
 
 '''
 
-Sample_String ='restart'
+str ='restart'
+char = '$'
 Expected_Result = 'resta$t'
 
-for i in Sample_String:
-    j = Sample_String[0]
-    k =Sample_String[1:len(Sample_String)]
 
-for el in k:
-    el == j
-    el.replace('r','$')
-    # print(k)
+def char_occurrences(str,char):
+    fchar = str[0]
+    schar = str[1:len(str)]
+    if fchar in schar:
+        x = schar.replace(fchar,char)
+        print(x)
+    return
 
+# char_occurrences(str,char)
 
 '''5. Swap first 2 chars of 2 strings.
 
@@ -84,25 +86,88 @@ Expected Result : 'xyc abz'
 
 '''
 
+pass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 '''6. Add ing or ly to a string.
 
-Write a Python program to add 'ing' at the end of a given string (length should be at least 3). If the given string already ends with 'ing', add 'ly' instead. If the string length of the given string is less than 3, leave it unchanged.
+Write a Python program to add 'ing' at the end of a given string (length should be at least 3). 
+If the given string already ends with 'ing', add 'ly' instead. If the string length of the given string is less than 3,
+ leave it unchanged.
+
+
 Sample String : 'abc'
 Expected Result : 'abcing'
 Sample String : 'string'
 Expected Result : 'stringly'
 '''
-str1 = 'coming'
-t = str1.find('ing')
-# print(t)
-# def change_str_ing_ly(str1):
-#     result = str()
-#     result1 = str1.find('ing')
-#     # if str1 == str1.find('ing'):
-#     print('yes')
 
-# print(change_str_ing_ly)
+str1 = 'abc'
+str2 = 'string'
+
+adstr1 = 'ing'
+adstr2 = 'ly'
+
+
+def change_str_ing_ly(str1,adstr1,adstr2):
+    if adstr1 not in str1:
+        print(str1+adstr2)
+    elif adstr2 in str2:
+        print(str2+adstr1)
+    
+
+
+# change_str_ing_ly(str2,adstr1,adstr2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 '''7. Replace 'not'...'poor' with 'good'.
 
@@ -121,20 +186,155 @@ Longest word: Exercises
 Length of the longest word: 9
 '''
 
+str = "PHP", "Exercises", "Backend"
 
-# myLis = ['php','Exercises','backend']
 
-# mylis2 = []
-# for i in myLis:
-#     i,mylis2.append(len(i)),i
-
-# print((i,mylis2))
+def longest_word(str):
+    lst = []
+    for i in str:
+        x = (len(i))
+        lst.append(x)
+    print(max(lst),i)
+        
+# longest_word(str)
 
 '''
+9. Remove nth character from a string.
+
+Write a Python program to remove the nth index character from a nonempty string.
+Click me to see the sample solution
+
+'''
+
+
+# print(remove_char('Python', 0))  # Output: 'ython'
+# print(remove_char('Python', 3))  # Output: 'Pyton'
+# print(remove_char('Python', 5))  # Output: 'Pytho'
+
+str = 'Python'
+idx = 2
+
+def remove_nth_indexchar(str,idx):
+    x = str[idx]
+    str.replace(str,x)
+    print(x)
+
+
+
+# remove_nth_indexchar(str,idx)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''
+10. Swap first and last chars of a string.
+
+Write a Python program to change a given string to a newly string where the first and last chars have been exchanged.
+Click me to see the sample solution
+'''
+
+
+str1 = 'abcd' # Output: 'dbca'
+
+str2 = '12345' # Output: '52341' 
+
+
+def Swap_first_last(str1):
+    fchar = str1[0]
+    lchar = str1[-1]
+
+    new_str = lchar+str1[1:-1]+fchar
+    print(new_str)
+    return
+
+# Swap_first_last(str1)
+# Swap_first_last(str2)
+
+
+
+
+'''
+
+11. Remove odd index chars from a string.
+
+Write a Python program to remove characters that have odd index values in a given string.
+Click me to see the sample solution
+'''
+# print(odd_values_string('abcdef'))  # Output: 'ace'
+# print(odd_values_string('python'))  # Output: 'pto'
+
+str = 'abcdef'
+
+def Remove_odd_index_chars(str):
+    print(str[0:len(str)]:1)
+
+
+
+
+
+
+
+Remove_odd_index_chars(str)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''
+
+
 12. Count word occurrences in a sentence.
 
 Write a Python program to count the occurrences of each word in a given sentence.
-
 
 '''
 

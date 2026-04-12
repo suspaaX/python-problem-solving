@@ -20,7 +20,6 @@ def sum_list(lis):
 2. Multiply Items in List
 '''
 
-
 def mul_list(lis):
     mul = 1
     for i in lis:
@@ -28,18 +27,29 @@ def mul_list(lis):
     print(mul)
     return
 
+lis1 = [1321,56,98]
 # mul_list(lis1)
 
+
+'''
 # 3. Get Largest Number in List
+'''
 
 def largest_num(lis):
     lis.sort()
     print(lis[-1])
     return
 
+lis1 = [-4566,87,98.1,1]
+
+
 # largest_num(lis1)
-    
+
+'''
 # 4. Get Smallest Number in List
+
+'''
+    
 
 def smallest_num(lis):
     lis.sort()
@@ -48,34 +58,50 @@ def smallest_num(lis):
 
 # smallest_num(lis1)
 
+
+'''
+
 # 5. Count Strings with Same Start and End
 
 # Write a Python program to count the number of strings from a given list of strings. 
 # The string length is 2 or more and the first and last characters are the same.
+'''
 
-sample_list = ['12221','abc', 'xyz', 'aba', '1221']
+lis1 = ['12221','abc', 'xyz', 'aba', '1221','2','55','1','oooo','7876','99']
 
 # Expected Result : 2
 
-def test_string(sample_list):
-    test = []
-    for elem in sample_list:
-        if len(elem)>=3 and elem[0]==elem[-1]:
-            test.append(elem)
-        print(test)
-        break
+def Same_Start_End(lis1):
+    m = [ ]
+    for elem in lis1:
+        nw_lis1 = []
+        if len(elem)>=2:
+            nw_lis1.append(elem)
+            # print(nw_lis1)
+            k = []
+            for el in nw_lis1:
+                if el[0] == el[-1]:
+                    k.append(el)
+
+                    m.append(k)     
+    print(len(m))           
     return
-    
-# test_string(sample_list)
-
-'''wrong answer'''
 
 
+
+# Same_Start_End(lis1)
+
+
+
+'''
 # 6. Sort Tuples by Last Element
 
 # Write a Python program to get a list, 
 # sorted in increasing order by the last element 
 # in each tuple from a given list of non-empty tuples.
+
+
+'''
 
 sample_list = [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
 
@@ -90,82 +116,155 @@ def sorted_tuple(sample_list):
 
 # sorted_tuple(sample_list)
 
-'''wrong answer'''
+
+
+
+'''
 
 # 7. Remove Duplicates from List
 
 # Write a Python program to remove duplicates from a list.
+'''
 
 
-a = [10, 20, 30, 20, 10, 50, 60, 40, 80, 50, 40]
+lis1  = [10, 20, 30, 20, 10, 50, 60, 40, 80, 50, 40]
 
-
-def remove_duplicate(a):
-    a = set(a)
-    b = [a]
-    c = []
-    for i in b:
-        c.append(i)
-    print(c)
+def remove_duplicate(lis1):
+    lis2 = [set(lis1)]
+    print(lis2)
     return
 
-# remove_duplicate(a)
+# remove_duplicate(lis1)
 
 
+'''
 
 # 8. Check if List is Empty
 
 # Write a Python program to check if a list is empty or not.
+'''
 
-'''skip'''
+lis1  = [10, 20, 30, 20, 10, 50, 60, 40, 80, 50, 40]
+lis2 = []
 
+def List_Empty(lis1):
+    k = len(lis1)
+    if len(lis1) >=1:
+        print('LIST IS NOT EMPTY...')
+    else:
+        print('LIST IS EMPTY...')
+    return
+
+
+# List_Empty(lis2)
+
+'''
 # 9. Clone or Copy a List
-
 # Write a Python program to clone or copy a list.
 # Click me to see the sample solution
+'''
 
-'''skip'''
+lis1  = [10, 20, 30, 20, 10, 50, 60, 40, 80, 50, 40]
 
+def Copy_List(lis1):
+    nw_lis = lis1.copy()
+    print(lis1)
+    print(nw_lis)
+    return
+
+# Copy_List(lis1)
+
+
+'''
+10. Find Words Longer Than n
+
+Write a Python program to find the list of words that are longer than n from a given list of words.
+Click me to see the sample solution
+
+'''
+
+lis1 = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow','klm','abhi','8900']
+n = 4
+
+def Words_Longer_n(lis1,n):
+    nw_lis = []
+    for ln in lis1:
+        if len(ln)>=n:
+            nw_lis.append(ln)
+    print(nw_lis)
+    return
+
+# Words_Longer_n(lis1,n)
+
+'''
+11. Check Common Member Between Two Lists
+
+Write a Python function that takes two lists and returns True if they have at least one common member.
+Click me to see the sample solution
+
+'''
+lis1  = [10, 20, 30, 20, 10,]
+         
+lis2 = [50, 60, 40, 80, 50, 40] 
+
+def  CommonMemberTwoLists(lis1,lis2):
+    pass
+
+
+'''
 # 12. Remove Specific Elements from List
 
 # Write a Python program to print a specified list after removing the 0th, 4th and 5th elements.
 sample_list = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
 Expected_Output = ['Green', 'White', 'Black']
 
+'''
 
-def remove_element(sample_list):
-    new_list = []
-    sample_list.pop(0)
-    sample_list.pop(4)
-    sample_list.pop(5)
-    print(sample_list)
+lis1 = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow','abh']
+n = [0]
+
+def remove_element(lis1,n):
+    nw_lis1 = []
+    for i in n:
+        k = lis1.pop(i)
+        nw_lis1.append(k)
+    print(nw_lis1)
     return
 
-# remove_element(sample_list)
+# remove_element(lis1,n)
+
+
+'''
 
 # 13. Generate 3D Array
 
 # Write a Python program to generate a 3*4*6 3D array whose each element is *.
 
-'''skip'''
+'''
+pass
+
+
+'''
 
 # 14. Remove Even Numbers from List
 
 # Write a Python program to print the numbers of a specified list after removing even numbers from it.
 
+'''
+
 num = [1, 2, 3, 2, 1, 5, 6, 4, 8, 5, 4]
 
 def remove_even(num):
-
     new_list = []
     for i in num:
-        i %2 == 0
-        new_list.append(i)
+        if i %2 != 0:
+            new_list.append(i)
     print(new_list)
     return
     
 # remove_even(num)
 
+'''
 
 # 15. Shuffle List
 
@@ -174,40 +273,224 @@ def remove_even(num):
 # def suffle_list(num):
 #     suffle_list.random
 
-'''skip'''
+'''
+
+lis1 = [1, 2, 3, 2, 1, 5, 6, 4, 8, 5, 4]
+
+
+def Shuffle_List(lis1):
+    from random import shuffle
+    shuffle(lis1)
+    print(lis1)
+    return
+
+
+# Shuffle_List(lis1)
+
+'''
 
 # 16. Generate Square Numbers in Range
 
-# Write a Python program to generate and print a list of the first and 
-# last 5 elements where the values are square numbers between 1 and 30 (both included).
+Write a Python program to generate and print a list of the first and 
+last 5 elements where the values are square numbers between 1 and 30 (both included).
+'''
+
+'''
+19. Calculate Difference Between Lists
+
+Write a Python program to calculate the difference between the two lists.
+Click me to see the sample solution
+'''
+
+lis1 = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow','abh']
+
+num = [1, 2, 3, 2, 1, 5, 6, 4, 8, 5, 4,'Black', 'Pink', 'Yellow','abh']
+
+
+def Difference_Lists(lis1,num):
+    nw_lis = []
+    for i,j in lis1:
+        print(i,j)
 
 
 
-# 27. Find Second Smallest Number in List
+# Difference_Lists(lis1,num)
 
-# Write a Python program to find the second smallest number in a list.
 
-([2])
-([1, 2, -8, -2, 0, -2])
-([1, 1, 0, 0, 2, -2, -2])
-([1, 1, 1, 0, 0, 0, 2, -2, -2])
-([2, 2])
 
- # Edge case with two identical elements, returns None
 
+
+
+
+'''
+
+20. Access List Indices
+
+Write a Python program to access the index of a list.
+Click me to see the sample solution
+
+'''
+
+lis1 = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow','abh']
+def index_list(list1):
+    for elem in enumerate(lis1):
+        print(elem)
+    return
+
+# index_list(lis1)
+
+
+
+'''21. Convert List to String
+
+Write a Python program to convert a list of characters into a string.
+Click me to see the sample solution
+
+'''
+
+lis1 = [1, 2, 3, 2, 1, 5, 6, 4, 8, 5, 4]
+
+def List_to_String(lis1):
+    nw_lis = [str()]
+    for i in lis1:
+        nw_lis.append(i)
+        print(nw_lis)
+        print(type(nw_lis))
+    return
+
+# List_to_String(lis1)
+
+
+'''
+22. Find Index of List Item
+
+Write a Python program to find the index of an item in a specified list.
+Click me to see the sample solution
+'''
+
+lis1 = [1, 2, -8, -2, 0, -2]
+item = -2
+
+def Find_Index_ListItem(lis1,item):
+    t = lis1.index(item)
+    print(t)
+    # for i in lis1:
+    #     if item == i:
+    #         lis1.index()
+    return
+
+# Find_Index_ListItem(lis1,item)
+
+'''
+23. Flatten Shallow List
+
+Write a Python program to flatten a shallow list.
+Click me to see the sample solution
+
+'''
+
+lis1 = [[1, 2, 3, 4], [5, 6, 7, 8]]
+
+lis2 = [[2, 4, 3], [1, 5, 6], [9], [7, 9, 0]]
+
+
+def Flatten_List(lis2):
+    nw_lis = []
+    for i in lis2:
+        i.extend(i)
+    print(i)
+    return
+
+
+# Flatten_List(lis2)
+
+
+
+
+'''
+24. Append One List to Another
+
+Write a Python program to append a list to the second list.
+Click me to see the sample solution
+'''
+lis1 = [1, 2, -8, -2, 0, -2]
+lis2 = [1, 1, 0, 0, 2, -2, -2]
+
+
+def Append_One_List(lis1,lis2):
+    lis1.extend(lis2)
+    print(lis1)
+    return
+
+# Append_One_List(lis1,lis2)
+
+
+'''
+25. Select Random Item from List
+
+Write a Python program to select an item randomly from a list.
+Click me to see the sample solution
+'''
+
+lis2 = [1, 1, 0, 0, 2, -2, -2]
+
+def Random_Item(lis2):
+    import random
+    print(random.choice(lis2))
+    return
+
+# Random_Item(lis2)
+
+'''
+26. Check Circularly Identical Lists
+
+Write a Python program to check whether two lists are circularly identical.
+Click me to see the sample solution
+
+'''
+pass
+
+
+'''
+27. Find Second Smallest Number in List
+
+Write a Python program to find the second smallest number in a list.
+'''
+
+l1= [2,0]
+l2 = [1, 2, -8, -2, 0, -2]
+l3 = [1, 1, 0, 0, 2, -2, -2]
+l4 = [1, 1, 1, 0, 0, 0, 2, -2, -2]
+l5 = [2, 2]
+
+
+def Second_Smallest_Number(l2):
+    l2.sort()
+    k = set(l2)
+    if len(k) == 0 :
+        print('value is empty')
+    elif len(k) >=2 :
+        print('value should be atleast 3')
+    elif len(k) <2 :
+        k = l2[1]
+
+    print(k)
+    # return
+
+# Second_Smallest_Number(l1)
+
+
+'''
 
 # 28. Find Second Largest Number in List
 
-''''Write a Python program to find the second largest number in a list.
+Write a Python program to find the second largest number in a list.
 Click me to see the sample solution'''
 
 lis1 = [1, 2, 3, 4, 4]
-
 lis2 = [1, 1, 1, 0, 0, 0, 2, -2, -2]
-
 lis3 = [2, 2]
-
-lis4 = [1]
+is4 = [1]
 
 def second_largest(lis1):
     lis1.sort()
@@ -216,13 +499,11 @@ def second_largest(lis1):
 
 # second_largest(lis4)
 
-
+'''
 # 29. Get Unique Values from List
-
-'''
 Write a Python program to get unique values from a list.
-
 '''
+
 Original_List  = [10, 20, 30, 40, 20, 50, 60, 40]                                                             
 List_of_unique_numbers =[40, 10, 50, 20, 60, 30]  
 
@@ -235,9 +516,11 @@ def unique_list(Original_List):
 # unique_list(Original_List)
 
 
+'''
 # 30. Count Frequency of List Elements
 
-'''Write a Python program to get the frequency of elements in a list.'''
+Write a Python program to get the frequency of elements in a list.
+'''
 
 Original_List = [10, 10, 10, 10, 20, 20, 20, 20, 40, 40, 50, 50, 30]                                         
 # Frequency of the elements in the List :  Counter({10: 4, 20: 4, 40: 2, 50: 2, 30: 1})
@@ -252,21 +535,32 @@ def frequency_of_elements(Original_List):
 
 # frequency_of_elements(Original_List)
 
+'''
+
 # 31. Count Elements in List Within Range
 
-'''Write a Python program to count the number of elements in a list within a specified range.'''
+Write a Python program to count the number of elements in a list within a specified range.
+
+'''
 
 list1 = [10, 20, 30, 40, 40, 40, 70, 80, 99]
 
 list2 = ['a', 'b', 'c', 'd', 'e', 'f']
 
-def count_element_range(list,a,b):
-    min = int(a)
-    max = int(b) 
-    count = {}
-    for i in range(min,max):
-        count.update(i)
-        
+min_num = 10
+max_num = 80
+
+def count_element_range(list1,min_num,max_num):
+    nw_lis = []
+    for i in list1:
+        if i<=min_num  :
+            nw_lis.append(i)
+        elif i<=max_num:
+            nw_lis.append(i)
+    print(nw_lis)
+    return
+
+# count_element_range(list1,min_num,max_num)
 
 
 '''
@@ -275,8 +569,18 @@ def count_element_range(list,a,b):
 Write a Python program to check whether a list contains a sublist.
 Click me to see the sample solution
 '''
-
 pass
+
+
+
+
+
+
+
+
+
+
+
 
 '''
 33. Generate All Sublists
@@ -285,7 +589,20 @@ Write a Python program to generate all sublists of a list.
 Click me to see the sample solution
 '''
 
-pass
+
+list1 =[10, 20, 30, 40]
+Sublist = [[], [10], [20], [30], [40], 
+           [10, 20], [10, 30], [10, 40], [20, 30], [20, 40], [30, 40], 
+           [10, 20, 30], [10, 20, 40], [10, 30, 40], [20, 30, 40], 
+           [10, 20, 30, 40]]
+
+
+def Generate_Sublists(lis1):
+    new_lis = []
+    for i in lis1:
+        pass
+
+
 
 '''
 34. Compute Primes Using Sieve of Eratosthenes
@@ -297,15 +614,41 @@ Click me to see the sample solution
 
 pass
 
+
+
+
+
+
+
+
+
+
+
 '''
 35. Create List with Range Concatenation
 
 Write a Python program to create a list by concatenating a given list with a range from 1 to n.
-Sample list : ['p', 'q']
-n =5
-Sample Output : ['p1', 'q1', 'p2', 'q2', 'p3', 'q3', 'p4', 'q4', 'p5', 'q5']
 '''
-pass
+
+list = ['p', 'q']
+n =5
+# Sample Output : ['p1', 'q1', 'p2', 'q2', 'p3', 'q3', 'p4', 'q4', 'p5', 'q5']
+
+def Range_Concatenation(list,n):
+    nw_lst = []
+    for i in range(1,n+1):
+        for k in list:
+            nw_lst.append(k*i)
+            for m in nw_lst:
+                print(len(m))
+
+    print(nw_lst)
+    return
+
+# Range_Concatenation(list,n)
+
+
+
 
 
 '''
@@ -315,7 +658,10 @@ Write a Python program to get a variable with an identification number or string
 Click me to see the sample solution
 '''
 
+
 pass
+
+
 
 '''
 37. Find Common Items in Lists
@@ -324,7 +670,22 @@ Write a Python program to find common items in two lists.
 Click me to see the sample solution
 '''
 
-pass
+color1 = "Red", "Green", "Orange", "White"
+
+
+color2 = "Black", "Green", "White", "Pink"
+
+
+def CommonItemsLists(color1,color2):
+    col1 = set(color1)
+    col2 = set(color2)
+    cmn = col1.intersection(col2)
+    print(cmn)
+    
+
+
+# CommonItemsLists(color1,color2)
+
 
 '''
 38. Swap Every n-th and (n+1)th Values
@@ -353,7 +714,10 @@ Sample_list = [1, 33, 50,5697,987]
 
 def IntList_SinInt(Sample_list):
     for i in Sample_list:
-        print(i,end='')
+        sum = '0'
+        t = str(i)
+        sum = sum+t
+        print(sum)
     return 
 
 
@@ -369,6 +733,7 @@ Click me to see the sample solution
 '''
 pass
 
+
 '''
 41. Create Multiple Lists
 
@@ -377,7 +742,60 @@ Click me to see the sample solution
 '''
 
 
+n = 10 
+
+
+def MultipleLists(n):
+    my_dict = {}
+    for i in range(1,n+1):
+        my_dict[str(i)] = []
+    print(my_dict)
+    return
+
+# MultipleLists(n)
+'''
+42. Find Missing and Additional Values in Lists
+
+Write a Python program to find missing and additional values in two lists.
+Sample data : Missing values in second list: b,a,c
+Additional values in second list: g,h
+Click me to see the sample solution
+'''
+
+list1 = ['a', 'b', 'c', 'd', 'e', 'f']
+list2 = ['d', 'e', 'f', 'g', 'h']
+
+
+def Missing_Additional(list1,list2):
+    set1 = set(list1)
+    set2 = set(list2)
+    missing_value = set1.difference(set2)
+    Additional_values = set2.difference(set1) 
+    print(f'Missing values in second list:',missing_value)
+    print(f'Missing values in second list:',Additional_values)
+    return
+
+# Missing_Additional(list1,list2)
+
+
+
+'''
+43. Split List into Variables
+
+Write a Python program to split a list into different variables.
+Click me to see the sample solution 
+'''
+
+color = [("Black", "#000000", "rgb(0, 0, 0)"),("Red", "#FF0000", "rgb(255, 0, 0)"),("Yellow", "#FFFF00", "rgb(255, 255, 0)")]
+
+
+def List_into_Variables(color):
+    var1 = []
+    var2 = []
+    var3 = []
+
 pass
+
 
 '''
 44. Generate Groups of Consecutive Numbers
@@ -388,14 +806,40 @@ Click me to see the sample solution
 
 lis1 = [4, 5, 6, 7, 8, 1, 2, 3,1, 2, 4, 8, 16, 32, 64]
 
-# def list_of_five(list1):
-#     new_list = [[i]*5 for i in list1]
-#     return new_list
+def list_of_five(list1):
+    nw_lis = []
+    for i in lis1:
+        if i <1:
+            pass
 
-# print(list_of_five(lis1))
+
 
 '''
-46. Select Odd Items from List
+
+45. Convert Pairs to Sorted Unique Array
+
+Write a Python program to convert a pair of values into a sorted unique array.
+Click me to see the sample solution
+'''
+
+list1 =   [(1, 2), (3, 4), (1, 2), (5, 6), (7, 8), (1, 2), (3, 4), (3, 4), (7, 8), (9, 10)]             
+unq_lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 
+
+def sorted_array(list1):
+    nw_lst = []
+    for i in list1:
+        for j in i:
+            i.sort()
+        nw_lst.append(i[0])
+    print(nw_lst)
+    return
+
+# sorted_array(list1)
+
+
+
+'''
+46. Select odd Items from List
 
 Write a Python program to select the odd items from a list.
 Click me to see the sample solution
@@ -405,15 +849,16 @@ lis1 = [4, 5, 6, 7, 8, 1, 2, 3,1, 2, 4, 8, 16, 32, 64]
 
 def odd_list(lis1):
     new_list = []
-    for i in range(1,len(lis1)+1):
-        ny = i
-        print(ny)
-    return
-
+    for i in lis1:
+        if i%2 != 0:
+            new_list.append(i)
+    print(new_list)
+    
 # (odd_list(lis1))
 
 
-#print 1 -100 all odd
+# print 1 -100 all odd
+
 
 '''47. Insert Element Before Each List Item
 
@@ -422,16 +867,97 @@ Click me to see the sample solution
 
 '''
 lis1 =   ['Red', 'Green', 'Black']
-elem = 'c'
+insert_Elem = ['c']
 
 
-def insert_element(lis1,elem):
-    new_list = []
+def insert_element(lis1,insert_Elem):
+    nw_lst = []
     for i in lis1:
-        new_list.append([elem]+[i])
-    return new_list
-    
-# print(insert_element(lis1,elem))
+        x = insert_Elem.join(i)
+        nw_lst.append(x)
+    print(nw_lst)
+    return
+
+# insert_element(lis1,insert_Elem)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''
+48. Print Nested Lists
+
+Write a Python program to print nested lists (each list on a new line) using the print() function.
+Click me to see the sample solution
+
+
+'''
+colors = [['Red'], ['Green'], ['Black']]
+
+def Nested_Lists(colors):
+    for i in colors:
+        print(i)
+    return
+
+# Nested_Lists(colors)
+
+
+'''
+49. Convert List to List of Dictionaries
+
+Write a Python program to convert a list to a list of dictionaries.
+Sample lists: ["Black", "Red", "Maroon", "Yellow"], ["#000000", "#FF0000", "#800000", "#FFFF00"]
+Expected Output: [{'color_name': 'Black', 'color_code': '#000000'}, {'color_name': 'Red', 'color_code': '#FF0000'}, {'color_name': 'Maroon', 'color_code': '#800000'}, {'color_name': 'Yellow', 'color_code': '#FFFF00'}]
+Click me to see the sample solutionTuple data structure
+'''
+
+
+list = ["Black", "Red", "Maroon", "Yellow"], ["#000000", "#FF0000", "#800000", "#FFFF00"]
+Expected_Output = [{'color_name': 'Black', 'color_code': '#000000'}, {'color_name': 'Red', 'color_code': '#FF0000'}, {'color_name': 'Maroon', 'color_code': '#800000'}, {'color_name': 'Yellow', 'color_code': '#FFFF00'}]
+
+
+def list_dictionaries(list):
+    pass
+
+
+
+'''
+50. Sort Nested Dictionaries in List
+
+Write a Python program to sort a list of nested dictionaries.
+Click me to see the sample solution
+
+'''
+
+
+List = [{'key': {'subkey': 1}}, {'key': {'subkey': 10}}, {'key': {'subkey': 5}}]  
+
+
+'''
+51. Split List Every Nth Element
+Write a Python program to split a list every Nth element.
+Sample list: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n']
+Expected Output: [['a', 'd', 'g', 'j', 'm'], ['b', 'e', 'h', 'k', 'n'], ['c', 'f', 'i', 'l']]
+Click me to see the sample solution
+'''
+pass
 
 '''
 52. Difference Between Two Lists
@@ -458,21 +984,26 @@ for i in lis2:
 # print(set3.difference(set4))
 # print(set4.difference(set3))
 
+
+
+
+
+
+
+
+
 '''
+
 53. Create List with Infinite Elements
 
 Write a Python program to create a list with infinite elements.
 Click me to see the sample solution
+
 '''
 
-
-def infinite_elements(*num):
-    new_lis1 = []
-    new_lis1.append(num)
-    return new_lis1
+pass
 
 
-# print(infinite_elements(1,4,5,57,9845,4))
 
 
 '''
@@ -484,30 +1015,40 @@ Click me to see the sample solution
 
 '''
 
-color = ['red', 'green', 'orange']
+colors = ['red', 'green', 'orange']
+lis2 = ["black", "yellow", "green", "blue"]
 
 def Concatenate_List(color):
-    new_elem = str()
-    for elem in color:
-        new_elem.join(elem)
-        return new_elem
+    nw_lst = []
+    # x = '+'.join(color)
+    # print(x)
+    sum = '0'
+    for color in colors:
+        sum = sum+color
+    print(sum)
     
-
-print(Concatenate_List(color))
+# Concatenate_List(color)
 
 
 '''
 55. Remove Key-Value Pairs from Dictionaries in List
 
-
 Write a Python program to remove key-value pairs from a list of dictionaries.
 Click me to see the sample solution
 '''
 
-original_list = [{'key1': 'value1', 'key2': 'value2'}, {'key1': 'value3', 'key2': 'value4'}]
+list1 = [{'key1': 'value1', 'key2': 'value2'}, {'key1': 'value3', 'key2': 'value4'}]
 
-def remove_keyvalue(original_list):
-    pass
+def remove_keyvalue(list1):
+    for i in list1:
+        print(i)
+    return
+
+
+
+# remove_keyvalue(list1)
+
+
 
 '''
 56. Convert String to List
@@ -810,6 +1351,92 @@ def Starting_Specific_Character(Original_list,elem):
 
 # Starting_Specific_Character(Original_list,elem)
 
+'''
+71. Check If All Dictionaries Are Empty
+
+Write a Python program to check whether all dictionaries in a list are empty or not.
+Sample list : [{},{},{}]
+Return value : True
+Sample list : [{1,2},{},{}]
+Return value : False
+Click me to see the sample solution
+
+'''
+
+list1=[{},{},{}]
+list2 = [{1,2},{},{}]
+
+def test_DictionariesEmpty(list1):
+    for i in list1:
+        if i == dict():
+            pass
+    print('True')
+    return
+
+# test_DictionariesEmpty(list2)
+
+
+
+'''
+72. Flatten Nested List Structure
+
+Write a Python program to flatten a given nested list structure.
+Original list: [0, 10, [20, 30], 40, 50, [60, 70, 80], [90, 100, 110, 120]]
+Flatten list:
+[0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120]
+Click me to see the sample solution
+
+'''
+list1 = [0, 10, [20, 30], 40, 50, [60, 70, 80], [90, 100, 110, 120]]
+[0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120]
+list2 = [10,40,5]
+
+def Flatten_Nested_List(list1):
+    nw_list =[]
+    for i in list1:
+        if len(lis1[i]) == int():
+            nw_list.append(i)
+    print(nw_list)
+    return
+
+# Flatten_Nested_List(list1)
+
+
+'''
+73. Remove Consecutive Duplicates
+
+Write a Python program to remove consecutive (following each other continuously) duplicates (elements) from a given list.
+Original list:
+[0, 0, 1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 9, 4, 4]
+After removing consecutive duplicates:
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 4]
+Click me to see the sample solution
+
+'''
+
+list1 = [0, 0, 1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 9, 4, 4]
+
+def RemoveConsecutiveDuplicates(list1):
+    new_list = []
+    for i in list1:
+        pass
+        new_list.append(i)
+    print(new_list)
+    return
+
+# RemoveConsecutiveDuplicates(list1)     
+
+
+
+
+
+
+
+
+
+
+
+
     
 '''
 72. Remove all except specified character.
@@ -848,37 +1475,6 @@ str1 = '@W3Resource.Com'
 
 # count_string(str1)
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 '''
@@ -966,24 +1562,6 @@ Click me to see the sample solution
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 '''
 81. Extract Random Elements from List
 
@@ -1006,10 +1584,6 @@ def Random_Elements_from_List(lis1):
     
 
 # Random_Elements_from_List(lis1)
-
-
-
-
 
 
 
@@ -1067,11 +1641,6 @@ def Round_Numbers_Calculate_Sum (lis1):
 
 
 
-
-
-
-
-
 '''
 84. Round Numbers, Find Min/Max, Multiply by 5
 
@@ -1099,22 +1668,6 @@ def min_max(lis1):
     return
 
 # min_max(lis1)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1673,28 +2226,6 @@ def List_Sorted(lis1):
 # List_Sorted(lis1)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 '''
 113. Remove Duplicate Dictionaries from List
 
@@ -1733,15 +2264,153 @@ True
 Click me to see the sample solution'''
 
 
-# lis1 = [2, 4, 6, 8, 10, 12, 14]
-# lis2 = [1, 2, 4, 6, 8, 2, 1, 4, 10, 12, 14, 12, 16, 17]
+lis1 = [2, 4, 6, 8, 10, 12, 14]
+lis2 = [1, 2, 4, 6, 8, 2, 1, 4, 10, 12, 14, 12, 16, 17]
 
 
-# def Unique_Elements(lis1):
-#     my_lis = []
-#     for i in lis1:
-#         x = lis1.count(i)
-#         print(f'no of element{i}:{x}')
+def Unique_Elements(lis1):
+    my_lis = []
+    for i in lis1:
+        x = lis1.count(i)
+        print(f'no of element{i}:{x}')
 
 
 # Unique_Elements(lis2)
+
+
+
+'''
+180. Create Smallest Number from List
+
+Write a Python program to create the smallest possible number using the elements of a given list of positive integers.
+Original list:
+[3, 40, 41, 43, 74, 9]
+Smallest possible number using the elements of the said list of positive integers:
+3404143749
+Original list:
+[10, 40, 20, 30, 50, 60]
+Smallest possible number using the elements of the said list of positive integers:
+102030405060
+Original list:
+[8, 4, 2, 9, 5, 6, 1, 0]
+Smallest possible number using the elements of the said list of positive integers:
+01245689
+Click me to see the sample solution
+'''
+
+lis1 = [3, 40, 41, 43, 74, 9]
+
+def Smallest_Number_List(lis1):
+    nw_list = []
+    lis1.sort()
+    print(lis1)
+    # for i in lis1:
+    #     k = i
+    #     print(i,end='')
+    return
+
+# Smallest_Number_List(lis1)
+
+
+'''
+181. Iterate List Cyclically at Index
+
+Write a Python program to iterate a given list cyclically at a specific index position.
+Original list:
+['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+Iterate the said list cyclically on specific index position 3 :
+['d', 'e', 'f', 'g', 'h', 'a', 'b', 'c']
+Iterate the said list cyclically on specific index position 5 :
+['f', 'g', 'h', 'a', 'b', 'c', 'd', 'e']
+Click me to see the sample solution
+
+'''
+lis1 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+idx = 3
+
+def Cyclically_Index(lis1,idx):
+    for i in enumerate(lis1):
+        print(i)
+    return
+
+# Cyclically_Index(lis1,idx)
+
+
+
+'''
+200. Pair Consecutive Elements in List
+
+Write a Python program to pair consecutive elements of a given list.
+Original lists:
+[1, 2, 3, 4, 5, 6]
+Pair up the consecutive elements of the said list:
+[[1, 2], [2, 3], [3, 4], [4, 5], [5, 6]]
+Original lists:
+[1, 2, 3, 4, 5]
+Pair up the consecutive elements of the said list:
+[[1, 2], [2, 3], [3, 4], [4, 5]]
+Click me to see the sample solution
+
+'''
+
+lis1 = [1, 2, 3, 4, 5, 6]
+
+
+def Pair_Consecutive_Elements(lis1):
+    nw_list = [ ]
+    for i in lis1:
+        nw_list.append(i)
+    print(lis1(nw_list))
+    return
+
+# Pair_Consecutive_Elements(lis1)
+
+'''
+251. Fill List with Specified Value
+
+Write a Python program that fills a list with the specified value.
+Sample Output:
+[0, 0, 0, 0, 0, 0, 0]
+[3, 3, 3, 3, 3, 3, 3, 3]
+[-2, -2, -2, -2, -2]
+[3.2, 3.2, 3.2, 3.2, 3.2]
+Click me to see the sample solution
+
+'''
+pass
+
+'''
+252. Get N Maximum Elements
+
+Write a Python program to get the n maximum elements from a given list of numbers.
+Sample Output:
+Original list elements:
+
+Maximum values of the said list: [3]
+Original list elements:
+[1, 2, 3]
+Two maximum values of the said list: [3, 2]
+Original list elements:
+
+Threee maximum values of the said list: [0, -1, -2]
+Original list elements:
+
+Two maximum values of the said list: [5.2, 4.6]
+Click me to see the sample solution
+'''
+list1 = [1, 2, 3]
+list2 = [-2, -3, -1, -2, -4, 0, -5]
+list3 = [-2, -3, -1, -2, -4, 0, -5]
+list4 = [2.2, 2, 3.2, 4.5, 4.6, 5.2, 2.9]
+
+n = 1
+
+def N_Maximum_Elements(list1,n):
+    list1.sort()
+    # for i in list1:
+    #     print(i)
+    t= list1[0::-1]
+    print(t)
+    return
+
+N_Maximum_Elements(list1,n)
