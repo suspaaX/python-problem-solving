@@ -283,7 +283,8 @@ Click me to see the sample solution
 str = 'abcdef'
 
 def Remove_odd_index_chars(str):
-    print(str[0:len(str)]:1)
+    for i in range(1):
+        pass
 
 
 
@@ -291,7 +292,7 @@ def Remove_odd_index_chars(str):
 
 
 
-Remove_odd_index_chars(str)
+# Remove_odd_index_chars(str)
 
 
 
@@ -660,15 +661,15 @@ Click me to see the sample solution
 Sample_string =  'w3resource'
 
 
-def find_index(Sample_string):
-    for i in enumerate(Sample_String):
-        print(i)
-        return
+# def find_index(Sample_string):
+    # for i in enumerate(Sample_String):
+    #     print(i)
+    #     return
     
 
 # find_index(Sample_String)
 
-pass
+
 
 
 '''

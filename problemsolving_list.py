@@ -533,7 +533,7 @@ def frequency_of_elements(Original_List):
     print(count_elem)
     return
 
-# frequency_of_elements(Original_List)
+frequency_of_elements(Original_List)
 
 '''
 
